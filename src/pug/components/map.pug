@@ -1,0 +1,46 @@
+section.map.map-section.section
+	h2.title._title
+		| Наша инфраструктура
+	.__wrapper
+		#map
+		.loader.loader-default
+		._list
+			.location
+				+card('backdrop')._card
+					+card()(class="location__inner")
+						._icon
+							+svg('cart')
+						p.text--bold._text
+							| Магазины
+
+			.location
+				+card('backdrop')._card
+					+card()(class="location__inner")
+						._icon
+							+svg('loc')
+						p.text--bold._text
+							| ЖК “Яблоновский”
+
+			.location
+				+card('backdrop')._card
+					+card()(class="location__inner")
+						._icon
+							+svg('toys')
+						p.text--bold._text
+							| Детский сад
+
+			.location
+				+card('backdrop')._card
+					+card()(class="location__inner")
+						._icon
+							+svg('azs')
+						p.text--bold._text
+							| АЗС
+
+			.location
+				+card('backdrop')._card
+					+card()(class="location__inner")
+						._icon
+							+svg('plus')
+						p.text--bold._text
+							| Поликлиника

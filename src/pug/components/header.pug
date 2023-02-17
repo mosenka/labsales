@@ -1,0 +1,19 @@
+header.header
+	.container._wrapper
+		a.logo(href="/")
+			img._img(src="./img/logo.svg" alt="logo" width="190px" height="94px")
+		.header__nav
+			.menu__button-wrapper
+				button.btn-reset.menu__button
+					span
+				span.menu__button-text
+					| Меню
+			include menu
+		.contacts.header__contacts
+			a.text--semibold._phone(href="tel:+79183774810")
+				| +7 (918) 377-48-10
+			button.btn-reset.text--semibold._button(type="button")
+				| Заказать звонок
+	.header__submenu
+		.container
+			include submenu

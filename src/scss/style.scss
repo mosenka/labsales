@@ -24,6 +24,7 @@ body {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
+	height: 100%;
 	min-width: 320px;
 	font-family: $font-family-Gilroy;
 	font-weight: 400;
@@ -31,6 +32,10 @@ body {
 	line-height: $lineHeight;
 	color: $color-cloud-burst;
 	background: $color-white;
+
+	@include tablet {
+		font-size: 2rem;
+	}
 }
 
 main {
@@ -64,13 +69,18 @@ img {
 }
 
 .title {
-	font-weight: 500;
-	font-size: 8rem;
-	line-height: 1;
-	letter-spacing: -0.03em;
+	width: 100%;
+	font-weight: 700;
+	font-size: 4.5rem;
+	line-height: 1.5;
+	text-align: center;
 
 	@include tablet {
 		font-size: 4rem;
+	}
+
+	@include mobile-hr {
+		font-size: 2.8rem;
 	}
 }
 
@@ -128,3 +138,65 @@ body.is-fixed {
 		width: 100%;
 	}
 }
+
+.btn-reset {
+	display: inline-block;
+	outline: none;
+	border: none;
+	padding: 0;
+	font-family: $font-family-Gilroy;
+	font-size: $fontsize;
+	color: $color-cloud-burst;
+	background: transparent;
+	cursor: pointer;
+
+	@include mobile-hr {
+		font-size: 2rem;
+	}
+}
+
+.text {
+	&--normal {
+		font-weight: 400;
+	}
+
+	&--medium {
+		font-weight: 500;
+	}
+
+	&--bold {
+		font-weight: 700;
+	}
+
+	&--semibold {
+		font-weight: 600;
+	}
+
+	&--s18 {
+		font-size: 1.8rem;
+	}
+
+	&--s16 {
+		font-size: 1.6rem;
+	}
+}
+
+.button {
+	&--accent {
+		border-radius: 10px;
+		padding: 1.5rem 2.5rem;
+		box-shadow: 0 6px 0 #2CABDC;
+		color: $color-white;
+		background: $color-accent;
+		transition: all 0.3s;
+
+		&:not([disabled]):hover,
+		&:not([disabled]):active {
+			border-radius: 20px;
+			box-shadow: 0 4px 20px #0B91C5;
+		}
+	}
+}
+
+@import "components/cards";
+@import "components/header";

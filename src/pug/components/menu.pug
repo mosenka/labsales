@@ -1,0 +1,9 @@
+nav.menu
+	._logo
+		img._logo-img(src="./img/logo-light.svg" alt="name" width="153" height="82")
+	ul._body
+		each item in data.menu
+			li._item
+				a._link.text--semibold.text--s18(href=item.url)= item.name
+					span._arrow
+						+svg("arrow")

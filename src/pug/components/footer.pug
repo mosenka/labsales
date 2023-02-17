@@ -1,0 +1,41 @@
+footer.footer
+	._container.container
+		._title.title
+			| Узнайте о выгодных предложениях и получите личную консультацию
+		._wrapper
+			.footer-contacts
+				.text--bold._desc
+					| По любым возникающим Вами вопросов звоните нам напрямую
+				a.__phone-wrapper(href="tel:+79183774810")
+					._icon
+						+svg("phone")
+					span.text--bold._phone
+						| +7 (918) 377-48-10
+			.form._form-wrapper
+				p.text--bold.text--s16._desc
+					| Или заполните форму
+				._wrapper
+					span.text--s16.text--semibold._status
+						| Сейчас мы работаем
+					form.footer-form._form
+						p._item
+							input._input(type="text" placeholder="Ваше имя")
+						p._item
+							input._input(type="text" placeholder="Ваш номер телефона")
+						p._item
+							input._input(type="text" placeholder="Ваш emeil")
+
+						p._item.-submit
+							button.btn-reset.button--accent._submit
+								| Отправить заявку
+						p._acceptance-wrapper
+							input._input-checkbox(type="checkbox" id="acpt")
+							label._label(for="acpt")
+								| Я принимаю
+								a.text--medium._link(href="#akcept")
+									|  условия обработки персональных данных
+
+
+
+
+

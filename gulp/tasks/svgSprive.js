@@ -44,4 +44,5 @@ export const svgSprive = () => {
 			}
 		}))
 		.pipe(app.gulp.dest(`${app.path.srcFolder}/img/`))
+		.pipe(app.gulp.dest(`${app.path.buildFolder}/img/`))
 }

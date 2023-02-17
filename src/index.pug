@@ -3,4 +3,12 @@ extends pug/base
 prepend vars
 
 block content
-	p test
+	include pug/data
+	include pug/components/header
+	main.main
+		include pug/components/offer
+		include pug/components/about
+		include pug/components/map
+		include pug/components/description
+	include pug/components/footer
+	include img/icons.svg
